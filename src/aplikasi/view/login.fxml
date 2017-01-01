@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.scene.image.*?>
-<?import javafx.scene.text.*?>
-<?import java.lang.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
 
-<AnchorPane id="AnchorPane" prefHeight="327.0" prefWidth="493.0" styleClass="page1" stylesheets="@../css/login.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="herudi.controller.controllLogin">
+<AnchorPane id="AnchorPane" prefHeight="327.0" prefWidth="493.0" styleClass="page1" stylesheets="@../css/login.css" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="aplikasi.controller.controllLogin">
    <children>
       <AnchorPane layoutX="97.0" layoutY="25.0" prefHeight="327.0" prefWidth="493.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
          <children>
-            <TextField fx:id="txtUsername" layoutX="132.0" layoutY="133.0" opacity="0.0" prefHeight="33.0" prefWidth="305.0" promptText="This Username App" />
-            <PasswordField fx:id="txtPassword" layoutX="132.0" layoutY="173.0" opacity="0.0" prefHeight="33.0" prefWidth="305.0" promptText="This Password App" />
+            <TextField fx:id="txtUsername" layoutX="132.0" layoutY="133.0" opacity="0.0" prefHeight="33.0" prefWidth="305.0" promptText="Ex : Dhimasganteng" />
+            <PasswordField fx:id="txtPassword" layoutX="132.0" layoutY="173.0" opacity="0.0" prefHeight="33.0" prefWidth="305.0" promptText="Ex : gantengbanget" />
             <Text fx:id="lblWelcome" fill="WHITE" layoutX="49.0" layoutY="75.0" opacity="0.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Welcome On">
                <font>
                   <Font name="Segoe UI Light" size="44.0" />
@@ -35,9 +35,9 @@
                </font>
             </Text>
             <Button fx:id="btnLogin" layoutX="314.0" layoutY="215.0" mnemonicParsing="false" onAction="#aksiLogin" opacity="0.0" prefHeight="33.0" prefWidth="123.0" text="Login" />
-            <Text fx:id="lblRudyCom" fill="WHITE" layoutX="9.0" layoutY="314.0" strokeType="OUTSIDE" strokeWidth="0.0" text="http://rudy-007.com/">
+            <Text fx:id="lblRudyCom" fill="WHITE" layoutX="9.0" layoutY="314.0" strokeType="OUTSIDE" strokeWidth="0.0" text="&quot;Setiap akhir sebuah cerita akan selalu menciptakan awal cerita baru, begitu juga dengan perpisahan.&quot;">
                <font>
-                  <Font name="Segoe UI" size="12.0" />
+                  <Font name="Segoe UI" size="11.0" />
                </font>
             </Text>
             <Label fx:id="lblClose" layoutX="472.0" layoutY="5.0" text="X" textFill="WHITE">
