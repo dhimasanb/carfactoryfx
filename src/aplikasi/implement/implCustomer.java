@@ -6,7 +6,6 @@
 package aplikasi.implement;
 
 import herudi.config.config2;
-import herudi.interfaces.interCustomer;
 import herudi.model.Customer;
 import herudi.model.DiscountCode;
 import herudi.model.MicroMarket;
@@ -20,6 +19,8 @@ import org.hibernate.Query;
 import org.hibernate.criterion.Projections;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
+
+import aplikasi.interfaces.interCustomer;
 
 @Repository
 public class implCustomer implements interCustomer {

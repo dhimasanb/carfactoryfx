@@ -6,7 +6,6 @@
 package aplikasi.implement;
 
 import herudi.config.config2;
-import herudi.interfaces.interProduct;
 import herudi.model.Manufacturer;
 import herudi.model.Product;
 import herudi.model.ProductCode;
@@ -18,6 +17,8 @@ import org.hibernate.Query;
 import org.hibernate.criterion.Projections;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
+
+import aplikasi.interfaces.interProduct;
 
 @Repository
 public class implProduct implements interProduct {

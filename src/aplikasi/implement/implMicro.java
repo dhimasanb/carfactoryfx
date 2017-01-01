@@ -6,7 +6,6 @@
 package aplikasi.implement;
 
 import herudi.config.config2;
-import herudi.interfaces.interMicro;
 import herudi.model.MicroMarket;
 import herudi.model.Product;
 import java.util.List;
@@ -15,6 +14,8 @@ import org.hibernate.HibernateException;
 import org.hibernate.Query;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
+
+import aplikasi.interfaces.interMicro;
 
 @Repository
 public class implMicro implements interMicro {
