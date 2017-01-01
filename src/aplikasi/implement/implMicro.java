@@ -5,9 +5,9 @@
  */
 package aplikasi.implement;
 
-import herudi.config.config2;
-import herudi.model.MicroMarket;
-import herudi.model.Product;
+import aplikasi.config.config2;
+import aplikasi.model.MicroMarket;
+import aplikasi.model.Product;
 import java.util.List;
 import javafx.scene.control.Alert;
 import org.hibernate.HibernateException;

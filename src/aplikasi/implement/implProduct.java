@@ -5,10 +5,10 @@
  */
 package aplikasi.implement;
 
-import herudi.config.config2;
-import herudi.model.Manufacturer;
-import herudi.model.Product;
-import herudi.model.ProductCode;
+import aplikasi.config.config2;
+import aplikasi.model.Manufacturer;
+import aplikasi.model.Product;
+import aplikasi.model.ProductCode;
 import java.util.List;
 import javafx.scene.control.Alert;
 import org.hibernate.Criteria;
