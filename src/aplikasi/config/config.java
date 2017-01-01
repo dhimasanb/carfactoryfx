@@ -23,7 +23,7 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 /**
  *
- * @author herudi-pc
+ * @author aplikasi-pc
  */
 public class config {
     private ApplicationContext applicationContext;
