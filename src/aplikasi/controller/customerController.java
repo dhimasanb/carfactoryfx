@@ -5,13 +5,13 @@
  */
 package aplikasi.controller;
 
-import herudi.animations.FadeInUpTransition;
-import herudi.config.config;
-import herudi.config.config2;
-import herudi.interfaces.interCustomer;
-import herudi.model.Customer;
-import herudi.model.DiscountCode;
-import herudi.model.MicroMarket;
+import aplikasi.animations.FadeInUpTransition;
+import aplikasi.config.config;
+import aplikasi.config.config2;
+import aplikasi.interfaces.interCustomer;
+import aplikasi.model.Customer;
+import aplikasi.model.DiscountCode;
+import aplikasi.model.MicroMarket;
 import java.net.URL;
 import java.util.Optional;
 import java.util.ResourceBundle;
@@ -49,7 +49,7 @@ import org.springframework.context.ApplicationContext;
 /**
  * FXML Controller class
  *
- * @author Herudi
+ * @author aplikasi
  */
 public class customerController implements Initializable {
     @FXML

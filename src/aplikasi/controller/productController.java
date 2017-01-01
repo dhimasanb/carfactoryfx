@@ -5,15 +5,15 @@
  */
 package aplikasi.controller;
 
-import herudi.animations.FadeInUpTransition;
-import herudi.config.config;
-import herudi.config.config2;
-import herudi.interfaces.interProduct;
-import herudi.model.Customer;
-import herudi.model.Manufacturer;
-import herudi.model.MicroMarket;
-import herudi.model.Product;
-import herudi.model.ProductCode;
+import aplikasi.animations.FadeInUpTransition;
+import aplikasi.config.config;
+import aplikasi.config.config2;
+import aplikasi.interfaces.interProduct;
+import aplikasi.model.Customer;
+import aplikasi.model.Manufacturer;
+import aplikasi.model.MicroMarket;
+import aplikasi.model.Product;
+import aplikasi.model.ProductCode;
 import java.math.BigDecimal;
 import java.net.URL;
 import java.util.Optional;
@@ -53,7 +53,7 @@ import org.springframework.context.ApplicationContext;
 /**
  * FXML Controller class
  *
- * @author Herudi
+ * @author aplikasi
  */
 public class productController implements Initializable {
     @FXML

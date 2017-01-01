@@ -5,9 +5,9 @@
  */
 package aplikasi.controller;
 
-import herudi.animations.FadeInUpTransition;
-import herudi.config.config;
-import herudi.config.config2;
+import aplikasi.animations.FadeInUpTransition;
+import aplikasi.config.config;
+import aplikasi.config.config2;
 import java.net.URL;
 import java.util.ResourceBundle;
 import javafx.application.Platform;
@@ -27,7 +27,7 @@ import javafx.stage.StageStyle;
 /**
  * FXML Controller class
  *
- * @author Herudi
+ * @author aplikasi
  */
 public class menu implements Initializable {
     @FXML
@@ -157,7 +157,7 @@ public class menu implements Initializable {
     @FXML
     private void aksiLogout(ActionEvent event) {
         config2 config = new config2();
-        config.newStage2(stage, btnLogout, "/herudi/view/login.fxml", "Sample Apps", true, StageStyle.UNDECORATED, false);
+        config.newStage2(stage, btnLogout, "/aplikasi/view/login.fxml", "Sample Apps", true, StageStyle.UNDECORATED, false);
     }
     
 }

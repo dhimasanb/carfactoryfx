@@ -5,10 +5,10 @@
  */
 package aplikasi.controller;
 
-import herudi.animations.FadeInLeftTransition;
-import herudi.animations.FadeInLeftTransition1;
-import herudi.animations.FadeInRightTransition;
-import herudi.config.config2;
+import aplikasi.animations.FadeInLeftTransition;
+import aplikasi.animations.FadeInLeftTransition1;
+import aplikasi.animations.FadeInRightTransition;
+import aplikasi.config.config2;
 import java.net.URL;
 import java.util.ResourceBundle;
 import javafx.application.Platform;
@@ -28,7 +28,7 @@ import javafx.stage.StageStyle;
 /**
  * FXML Controller class
  *
- * @author Herudi
+ * @author aplikasi
  */
 public class controllLogin implements Initializable {
     @FXML
@@ -75,9 +75,9 @@ public class controllLogin implements Initializable {
 
     @FXML
     private void aksiLogin(ActionEvent event) {
-        if (txtUsername.getText().equals("herudi") && txtPassword.getText().equals("herudi")) {
+        if (txtUsername.getText().equals("aplikasi") && txtPassword.getText().equals("aplikasi")) {
             config2 c = new config2();
-            c.newStage(stage, lblClose, "/herudi/view/formMenu.fxml", "Test App", true, StageStyle.UNDECORATED, false);
+            c.newStage(stage, lblClose, "/aplikasi/view/formMenu.fxml", "Test App", true, StageStyle.UNDECORATED, false);
         }else{
             config2.dialog(Alert.AlertType.ERROR, "Error Login, Please Chek Username And Password");
         }

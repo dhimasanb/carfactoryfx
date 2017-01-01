@@ -5,11 +5,11 @@
  */
 package aplikasi.controller;
 
-import herudi.animations.FadeInLeftTransition;
-import herudi.animations.FadeInRightTransition;
-import herudi.animations.FadeInTransition;
-import herudi.config.config;
-import herudi.config.config2;
+import aplikasi.animations.FadeInLeftTransition;
+import aplikasi.animations.FadeInRightTransition;
+import aplikasi.animations.FadeInTransition;
+import aplikasi.config.config;
+import aplikasi.config.config2;
 import java.net.URL;
 import java.util.ResourceBundle;
 import javafx.application.Platform;
@@ -30,7 +30,7 @@ import org.springframework.context.ApplicationContext;
 /**
  * FXML Controller class
  *
- * @author Herudi
+ * @author aplikasi
  */
 public class controllSplash implements Initializable {
     @FXML
@@ -86,7 +86,7 @@ public class controllSplash implements Initializable {
         });
         service.setOnSucceeded((WorkerStateEvent event) -> {
             config2 config = new config2();
-            config.newStage(stage, lblClose, "/herudi/view/login.fxml", "Sample Apps", true, StageStyle.UNDECORATED, false);
+            config.newStage(stage, lblClose, "/aplikasi/view/login.fxml", "Sample Apps", true, StageStyle.UNDECORATED, false);
         });
     } 
 }

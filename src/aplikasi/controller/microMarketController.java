@@ -5,14 +5,14 @@
  */
 package aplikasi.controller;
 
-import herudi.animations.FadeInUpTransition;
-import herudi.config.config;
-import herudi.config.config2;
-import herudi.interfaces.interCustomer;
-import herudi.interfaces.interMicro;
-import herudi.model.Customer;
-import herudi.model.MicroMarket;
-import herudi.model.Product;
+import aplikasi.animations.FadeInUpTransition;
+import aplikasi.config.config;
+import aplikasi.config.config2;
+import aplikasi.interfaces.interCustomer;
+import aplikasi.interfaces.interMicro;
+import aplikasi.model.Customer;
+import aplikasi.model.MicroMarket;
+import aplikasi.model.Product;
 import java.net.URL;
 import java.util.Optional;
 import java.util.ResourceBundle;
@@ -49,7 +49,7 @@ import org.springframework.context.ApplicationContext;
 /**
  * FXML Controller class
  *
- * @author Herudi
+ * @author aplikasi
  */
 public class microMarketController implements Initializable {
     @FXML
