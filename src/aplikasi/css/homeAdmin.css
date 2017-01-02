@@ -1,0 +1,90 @@
+#menuEmployees {
+	-fx-background-color: #2b579a;
+}
+
+#menuEmployees .label {
+	-fx-text-fill: white;
+}
+
+#menuEmployees:hover {
+    -fx-background-color: #13418b;
+    -fx-text-fill: white;
+}
+
+#menuCustomer {
+	-fx-background-color: #2b579a;
+}
+
+#menuCustomer .label {
+	-fx-text-fill: white;
+}
+
+#menuCustomer:hover {
+    -fx-background-color: #13418b;
+    -fx-text-fill: white;
+}
+
+#menuVehicle {
+	-fx-background-color: #2b579a;
+}
+
+#menuVehicle .label {
+	-fx-text-fill: white;
+}
+
+#menuVehicle:hover {
+    -fx-background-color: #13418b;
+    -fx-text-fill: white;
+}
+
+#menuReport {
+	-fx-background-color: #2b579a;
+}
+
+#menuReport .label {
+	-fx-text-fill: white;
+}
+
+#menuReport:hover {
+    -fx-background-color: #13418b;
+    -fx-text-fill: white;
+}
+
+#menuSpareparts {
+	-fx-background-color: #2b579a;
+}
+
+#menuSpareparts .label {
+	-fx-text-fill: white;
+}
+
+#menuSpareparts:hover {
+    -fx-background-color: #13418b;
+    -fx-text-fill: white;
+}
+
+#menuAbout {
+	-fx-background-color: #2b579a;
+}
+
+#menuAbout .label {
+	-fx-text-fill: white;
+}
+
+#menuAbout:hover {
+    -fx-background-color: #13418b;
+    -fx-text-fill: white;
+}
+
+#btnLogout {
+	-fx-background-color: transparent;
+}
+
+#btnLogout:hover {
+	-fx-background-color: white;
+}
+
+
+.label:hover {
+	-fx-text-fill: white;
+}
