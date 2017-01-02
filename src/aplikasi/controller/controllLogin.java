@@ -75,12 +75,14 @@ public class controllLogin implements Initializable {
 
     @FXML
     private void aksiLogin(ActionEvent event) {
-        if (txtUsername.getText().equals("aplikasi") && txtPassword.getText().equals("aplikasi")) {
+        if (txtUsername.getText().equals("admin") && txtPassword.getText().equals("admin")) {
             config2 c = new config2();
-            c.newStage(stage, lblClose, "/aplikasi/view/formMenu.fxml", "Test App", true, StageStyle.UNDECORATED, false);
+            c.newStage(stage, lblClose, "/aplikasi/view/homeAdmin.fxml", "Test App", true, StageStyle.UNDECORATED, false);
         }else{
             config2.dialog(Alert.AlertType.ERROR, "Error Login, Please Chek Username And Password");
         }
     }
+    
+    
     
 }
