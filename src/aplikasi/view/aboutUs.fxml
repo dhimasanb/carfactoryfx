@@ -1,0 +1,323 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Point3D?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="615.0" prefWidth="1031.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="aplikasi.controller.aboutUsController">
+   <children>
+      <AnchorPane id="AnchorPane" maxHeight="-1.0" maxWidth="-1.0" minHeight="-1.0" minWidth="-1.0" pickOnBounds="false" prefHeight="506.0" prefWidth="738.0" snapToPixel="true" style="-fx-border-color: #2b579a; -fx-background-color: white;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <children>
+          <Label id="TitleLabel" fx:id="title" alignment="CENTER" layoutX="2.0" layoutY="-3.0" mouseTransparent="true" prefHeight="38.0" prefWidth="738.0" text="About Us" textFill="#a1a1a1" AnchorPane.leftAnchor="1.0" AnchorPane.rightAnchor="-1.0">
+               <font>
+                  <Font name="Segoe UI Semibold" size="14.0" />
+               </font>
+          </Label>
+            <HBox layoutX="892.0" layoutY="2.0" stylesheets="@../css/winDec.css" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <children>
+                <Button fx:id="fullscreen" mnemonicParsing="false" onAction="#aksifullscreen" pickOnBounds="true" prefHeight="30.0" prefWidth="34.0" style="" styleClass="decoration-button-fullscreen" text="" AnchorPane.rightAnchor="102.0" AnchorPane.topAnchor="0.0" />
+                <Button fx:id="minimize" mnemonicParsing="false" onAction="#aksiminimize" pickOnBounds="true" prefHeight="30.0" prefWidth="34.0" style="" styleClass="decoration-button-minimize" text="" AnchorPane.rightAnchor="68.0" AnchorPane.topAnchor="0.0" />
+                <Button fx:id="maximize" mnemonicParsing="false" onAction="#aksiMaximized" pickOnBounds="true" prefHeight="30.0" prefWidth="34.0" styleClass="decoration-button-maximize" text="" AnchorPane.rightAnchor="34.0" AnchorPane.topAnchor="0.0" />
+                <Button fx:id="close" mnemonicParsing="false" onAction="#aksiClose" pickOnBounds="true" prefHeight="30.0" prefWidth="34.0" styleClass="decoration-button-close" text="" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                  <rotationAxis>
+                    <Point3D />
+                  </rotationAxis>
+                </Button>
+               </children>
+            </HBox>
+          <Button fx:id="resize" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" mouseTransparent="true" onAction="#aksiResize" pickOnBounds="true" prefHeight="10.0" prefWidth="10.0" styleClass="decoration-button-resize" stylesheets="@../css/winDec.css" text="" AnchorPane.bottomAnchor="2.0" AnchorPane.rightAnchor="2.0" />
+            <AnchorPane layoutX="2.0" layoutY="2.0" prefHeight="613.0" prefWidth="136.0" style="-fx-background-color: #2b579a;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <ListView fx:id="listMenu" layoutX="-3.0" layoutY="78.0" onMouseClicked="#aksiKlikListMenu" prefHeight="535.0" prefWidth="136.0" stylesheets="@../css/listView.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="78.0" />
+                  <Button fx:id="btnLogout" layoutX="22.0" layoutY="19.0" mnemonicParsing="false" onAction="#aksiLogout" prefHeight="40.0" prefWidth="40.0" stylesheets="@../css/buttonCircle.css">
+                     <graphic>
+                        <ImageView fitHeight="16.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../img/arrowLeft.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="138.0" layoutY="40.0" prefHeight="545.0" prefWidth="891.0" style="-fx-background-color: white;" AnchorPane.bottomAnchor="31.0" AnchorPane.leftAnchor="137.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="39.0">
+               <children>
+                <AnchorPane fx:id="paneData" layoutX="1.0" minHeight="0.0" minWidth="0.0" prefHeight="652.0" prefWidth="1225.0" style="-fx-background-color: white;">
+                     <children>
+                        <AnchorPane layoutX="51.0" layoutY="100.0" prefHeight="165.0" prefWidth="412.0" style="-fx-border-color: black;">
+                           <children>
+                              <Label layoutX="151.0" layoutY="41.0" text="Dhimas Akbar Noor Baihaque">
+                                 <font>
+                                    <Font name="Segoe UI Bold" size="18.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="151.0" layoutY="64.0" text="0110115006">
+                                 <font>
+                                    <Font name="Segoe UI" size="18.0" />
+                                 </font>
+                              </Label>
+                              <ImageView fitHeight="146.0" fitWidth="115.0" layoutX="14.0" layoutY="29.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../../../../AppData/Local/Temp/Contacts_96px_5.png" />
+                                 </image>
+                              </ImageView>
+                              <AnchorPane layoutX="139.0" layoutY="95.0" prefHeight="44.0" prefWidth="197.0">
+                                 <children>
+                                    <ImageView fx:id="facebook" fitHeight="36.0" fitWidth="36.0" layoutX="8.0" layoutY="8.0">
+                                       <image>
+                                          <Image url="@../../../../../AppData/Local/Temp/Facebook_96px_1.png" />
+                                       </image>
+                                    </ImageView>
+                                    <ImageView fx:id="whatsapp" fitHeight="36.0" fitWidth="36.0" layoutX="57.0" layoutY="8.0">
+                                       <image>
+                                          <Image url="@../../../../../AppData/Local/Temp/WhatsApp_96px.png" />
+                                       </image>
+                                    </ImageView>
+                                    <ImageView fx:id="twitter" fitHeight="36.0" fitWidth="36.0" layoutX="103.0" layoutY="8.0">
+                                       <image>
+                                          <Image url="@../../../../../AppData/Local/Temp/Twitter_96px.png" />
+                                       </image>
+                                    </ImageView>
+                                    <ImageView fx:id="instagram" fitHeight="36.0" fitWidth="36.0" layoutX="149.0" layoutY="8.0">
+                                       <image>
+                                          <Image url="@../../../../../AppData/Local/Temp/Instagram%20Old_96px.png" />
+                                       </image>
+                                    </ImageView>
+                                 </children>
+                              </AnchorPane>
+                           </children>
+                        </AnchorPane>
+                        <Label layoutX="469.0" layoutY="24.0" text="Kelompok">
+                           <font>
+                              <Font name="Segoe UI Bold" size="30.0" />
+                           </font>
+                        </Label>
+                        <AnchorPane layoutX="51.0" layoutY="275.0" prefHeight="165.0" prefWidth="412.0" style="-fx-border-color: black;">
+                           <children>
+                              <Label layoutX="151.0" layoutY="41.0" text="Muh. Syaiful Romadhon">
+                                 <font>
+                                    <Font name="Segoe UI Bold" size="18.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="151.0" layoutY="64.0" text="0110115006">
+                                 <font>
+                                    <Font name="Segoe UI" size="18.0" />
+                                 </font>
+                              </Label>
+                              <ImageView fitHeight="146.0" fitWidth="115.0" layoutX="14.0" layoutY="29.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../../../../AppData/Local/Temp/Contacts_96px_5.png" />
+                                 </image>
+                              </ImageView>
+                              <AnchorPane layoutX="139.0" layoutY="95.0" prefHeight="44.0" prefWidth="197.0">
+                                 <children>
+                                    <ImageView fx:id="facebook1" fitHeight="36.0" fitWidth="36.0" layoutX="8.0" layoutY="8.0">
+                                       <image>
+                                          <Image url="@../../../../../AppData/Local/Temp/Facebook_96px_1.png" />
+                                       </image>
+                                    </ImageView>
+                                    <ImageView fx:id="whatsapp1" fitHeight="36.0" fitWidth="36.0" layoutX="57.0" layoutY="8.0">
+                                       <image>
+                                          <Image url="@../../../../../AppData/Local/Temp/WhatsApp_96px.png" />
+                                       </image>
+                                    </ImageView>
+                                    <ImageView fx:id="twitter1" fitHeight="36.0" fitWidth="36.0" layoutX="103.0" layoutY="8.0">
+                                       <image>
+                                          <Image url="@../../../../../AppData/Local/Temp/Twitter_96px.png" />
+                                       </image>
+                                    </ImageView>
+                                    <ImageView fx:id="instagram1" fitHeight="36.0" fitWidth="36.0" layoutX="149.0" layoutY="8.0">
+                                       <image>
+                                          <Image url="@../../../../../AppData/Local/Temp/Instagram%20Old_96px.png" />
+                                       </image>
+                                    </ImageView>
+                                 </children>
+                              </AnchorPane>
+                           </children>
+                        </AnchorPane>
+                        <AnchorPane layoutX="51.0" layoutY="451.0" prefHeight="165.0" prefWidth="412.0" style="-fx-border-color: black;">
+                           <children>
+                              <Label layoutX="151.0" layoutY="41.0" text="Taufiqul Hidayah">
+                                 <font>
+                                    <Font name="Segoe UI Bold" size="18.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="151.0" layoutY="64.0" text="0110115006">
+                                 <font>
+                                    <Font name="Segoe UI" size="18.0" />
+                                 </font>
+                              </Label>
+                              <ImageView fitHeight="146.0" fitWidth="115.0" layoutX="14.0" layoutY="29.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../../../../AppData/Local/Temp/Contacts_96px_5.png" />
+                                 </image>
+                              </ImageView>
+                              <AnchorPane layoutX="139.0" layoutY="95.0" prefHeight="44.0" prefWidth="197.0">
+                                 <children>
+                                    <ImageView fx:id="facebook11" fitHeight="36.0" fitWidth="36.0" layoutX="8.0" layoutY="8.0">
+                                       <image>
+                                          <Image url="@../../../../../AppData/Local/Temp/Facebook_96px_1.png" />
+                                       </image>
+                                    </ImageView>
+                                    <ImageView fx:id="whatsapp11" fitHeight="36.0" fitWidth="36.0" layoutX="57.0" layoutY="8.0">
+                                       <image>
+                                          <Image url="@../../../../../AppData/Local/Temp/WhatsApp_96px.png" />
+                                       </image>
+                                    </ImageView>
+                                    <ImageView fx:id="twitter11" fitHeight="36.0" fitWidth="36.0" layoutX="103.0" layoutY="8.0">
+                                       <image>
+                                          <Image url="@../../../../../AppData/Local/Temp/Twitter_96px.png" />
+                                       </image>
+                                    </ImageView>
+                                    <ImageView fx:id="instagram11" fitHeight="36.0" fitWidth="36.0" layoutX="149.0" layoutY="8.0">
+                                       <image>
+                                          <Image url="@../../../../../AppData/Local/Temp/Instagram%20Old_96px.png" />
+                                       </image>
+                                    </ImageView>
+                                 </children>
+                              </AnchorPane>
+                           </children>
+                        </AnchorPane>
+                        <AnchorPane layoutX="659.0" layoutY="100.0" prefHeight="165.0" prefWidth="412.0" style="-fx-border-color: black;">
+                           <children>
+                              <Label layoutX="151.0" layoutY="41.0" text="Fasyikhatun Maidah">
+                                 <font>
+                                    <Font name="Segoe UI Bold" size="18.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="151.0" layoutY="64.0" text="0110115006">
+                                 <font>
+                                    <Font name="Segoe UI" size="18.0" />
+                                 </font>
+                              </Label>
+                              <ImageView fitHeight="146.0" fitWidth="115.0" layoutX="14.0" layoutY="29.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../../../../AppData/Local/Temp/Contacts_96px_5.png" />
+                                 </image>
+                              </ImageView>
+                              <AnchorPane layoutX="139.0" layoutY="95.0" prefHeight="44.0" prefWidth="197.0">
+                                 <children>
+                                    <ImageView fx:id="facebook2" fitHeight="36.0" fitWidth="36.0" layoutX="8.0" layoutY="8.0">
+                                       <image>
+                                          <Image url="@../../../../../AppData/Local/Temp/Facebook_96px_1.png" />
+                                       </image>
+                                    </ImageView>
+                                    <ImageView fx:id="whatsapp2" fitHeight="36.0" fitWidth="36.0" layoutX="57.0" layoutY="8.0">
+                                       <image>
+                                          <Image url="@../../../../../AppData/Local/Temp/WhatsApp_96px.png" />
+                                       </image>
+                                    </ImageView>
+                                    <ImageView fx:id="twitter2" fitHeight="36.0" fitWidth="36.0" layoutX="103.0" layoutY="8.0">
+                                       <image>
+                                          <Image url="@../../../../../AppData/Local/Temp/Twitter_96px.png" />
+                                       </image>
+                                    </ImageView>
+                                    <ImageView fx:id="instagram2" fitHeight="36.0" fitWidth="36.0" layoutX="149.0" layoutY="8.0">
+                                       <image>
+                                          <Image url="@../../../../../AppData/Local/Temp/Instagram%20Old_96px.png" />
+                                       </image>
+                                    </ImageView>
+                                 </children>
+                              </AnchorPane>
+                           </children>
+                        </AnchorPane>
+                        <AnchorPane layoutX="659.0" layoutY="275.0" prefHeight="165.0" prefWidth="412.0" style="-fx-border-color: black;">
+                           <children>
+                              <Label layoutX="151.0" layoutY="41.0" text="Irfan Rahmanda">
+                                 <font>
+                                    <Font name="Segoe UI Bold" size="18.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="151.0" layoutY="64.0" text="0110115006">
+                                 <font>
+                                    <Font name="Segoe UI" size="18.0" />
+                                 </font>
+                              </Label>
+                              <ImageView fitHeight="146.0" fitWidth="115.0" layoutX="14.0" layoutY="29.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../../../../AppData/Local/Temp/Contacts_96px_5.png" />
+                                 </image>
+                              </ImageView>
+                              <AnchorPane layoutX="139.0" layoutY="95.0" prefHeight="44.0" prefWidth="197.0">
+                                 <children>
+                                    <ImageView fx:id="facebook12" fitHeight="36.0" fitWidth="36.0" layoutX="8.0" layoutY="8.0">
+                                       <image>
+                                          <Image url="@../../../../../AppData/Local/Temp/Facebook_96px_1.png" />
+                                       </image>
+                                    </ImageView>
+                                    <ImageView fx:id="whatsapp12" fitHeight="36.0" fitWidth="36.0" layoutX="57.0" layoutY="8.0">
+                                       <image>
+                                          <Image url="@../../../../../AppData/Local/Temp/WhatsApp_96px.png" />
+                                       </image>
+                                    </ImageView>
+                                    <ImageView fx:id="twitter12" fitHeight="36.0" fitWidth="36.0" layoutX="103.0" layoutY="8.0">
+                                       <image>
+                                          <Image url="@../../../../../AppData/Local/Temp/Twitter_96px.png" />
+                                       </image>
+                                    </ImageView>
+                                    <ImageView fx:id="instagram12" fitHeight="36.0" fitWidth="36.0" layoutX="149.0" layoutY="8.0">
+                                       <image>
+                                          <Image url="@../../../../../AppData/Local/Temp/Instagram%20Old_96px.png" />
+                                       </image>
+                                    </ImageView>
+                                 </children>
+                              </AnchorPane>
+                           </children>
+                        </AnchorPane>
+                        <AnchorPane layoutX="659.0" layoutY="451.0" prefHeight="165.0" prefWidth="412.0" style="-fx-border-color: black;">
+                           <children>
+                              <Label layoutX="151.0" layoutY="41.0" text="Mitasari Nurazizah">
+                                 <font>
+                                    <Font name="Segoe UI Bold" size="18.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="151.0" layoutY="64.0" text="0110115006">
+                                 <font>
+                                    <Font name="Segoe UI" size="18.0" />
+                                 </font>
+                              </Label>
+                              <ImageView fitHeight="146.0" fitWidth="115.0" layoutX="14.0" layoutY="29.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../../../../AppData/Local/Temp/Contacts_96px_5.png" />
+                                 </image>
+                              </ImageView>
+                              <AnchorPane layoutX="139.0" layoutY="95.0" prefHeight="44.0" prefWidth="197.0">
+                                 <children>
+                                    <ImageView fx:id="facebook111" fitHeight="36.0" fitWidth="36.0" layoutX="8.0" layoutY="8.0">
+                                       <image>
+                                          <Image url="@../../../../../AppData/Local/Temp/Facebook_96px_1.png" />
+                                       </image>
+                                    </ImageView>
+                                    <ImageView fx:id="whatsapp111" fitHeight="36.0" fitWidth="36.0" layoutX="57.0" layoutY="8.0">
+                                       <image>
+                                          <Image url="@../../../../../AppData/Local/Temp/WhatsApp_96px.png" />
+                                       </image>
+                                    </ImageView>
+                                    <ImageView fx:id="twitter111" fitHeight="36.0" fitWidth="36.0" layoutX="103.0" layoutY="8.0">
+                                       <image>
+                                          <Image url="@../../../../../AppData/Local/Temp/Twitter_96px.png" />
+                                       </image>
+                                    </ImageView>
+                                    <ImageView fx:id="instagram111" fitHeight="36.0" fitWidth="36.0" layoutX="149.0" layoutY="8.0">
+                                       <image>
+                                          <Image url="@../../../../../AppData/Local/Temp/Instagram%20Old_96px.png" />
+                                       </image>
+                                    </ImageView>
+                                 </children>
+                              </AnchorPane>
+                           </children>
+                        </AnchorPane>
+                     </children>
+                  </AnchorPane>
+               </children>
+            </AnchorPane>
+        </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
