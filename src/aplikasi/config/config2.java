@@ -6,14 +6,19 @@
 package aplikasi.config;
 
 import java.io.IOException;
+import java.util.Optional;
+
+import javafx.application.Platform;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Alert;
 import javafx.scene.control.Button;
+import javafx.scene.control.ButtonType;
 import javafx.scene.control.Label;
 import javafx.scene.control.TableColumn;
+import javafx.scene.control.Alert.AlertType;
 import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.scene.layout.AnchorPane;
 import javafx.stage.Stage;
@@ -35,6 +40,15 @@ public class config2 {
         alert.showAndWait();
     }
     
+    public static void dialogConfirmation(Alert.AlertType alertType,String s){
+    	Alert alert = new Alert(alertType,s);
+        alert.initStyle(StageStyle.UTILITY);
+		alert.setTitle("Confirmation Dialog");
+		alert.setHeaderText("Look, a Confirmation Dialog");
+		alert.setContentText("Apakah kamu ingin keluar dari program?");
+		alert.showAndWait();
+    }
+        
     public void newStage(Stage stage, Label lb, String load, String judul, boolean resize, StageStyle style, boolean maximized){
        try {
             Stage st = new Stage();
