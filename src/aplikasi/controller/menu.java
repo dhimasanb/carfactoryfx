@@ -5,8 +5,6 @@
  */
 package aplikasi.controller;
 
-import aplikasi.animations.FadeInUpTransition;
-import aplikasi.config.config;
 import aplikasi.config.config2;
 import java.net.URL;
 import java.util.ResourceBundle;
