@@ -8,9 +8,16 @@ package aplikasi.controller;
 import aplikasi.animations.FadeInLeftTransition;
 import aplikasi.animations.FadeInLeftTransition1;
 import aplikasi.animations.FadeInRightTransition;
+import aplikasi.config.config;
 import aplikasi.config.config2;
+import aplikasi.config.database;
+
 import java.net.URL;
+import java.sql.SQLException;
 import java.util.ResourceBundle;
+
+import com.mysql.jdbc.Connection;
+
 import javafx.application.Platform;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
@@ -48,6 +55,8 @@ public class controllLogin implements Initializable {
     @FXML
     private Button btnLogin;
     @FXML
+    private Button btnLogin1;
+    @FXML
     private Text lblRudyCom;
     @FXML 
     private Label lblClose;        
@@ -67,6 +76,7 @@ public class controllLogin implements Initializable {
             new FadeInLeftTransition1(txtUsername).play();
             new FadeInLeftTransition1(txtPassword).play();
             new FadeInRightTransition(btnLogin).play();
+            new FadeInRightTransition(btnLogin1).play();
             lblClose.setOnMouseClicked((MouseEvent event) -> {
                 Platform.exit();
                 System.exit(0);
@@ -84,6 +94,37 @@ public class controllLogin implements Initializable {
             config2.dialog(Alert.AlertType.ERROR, "Error Login, Please Chek Username And Password");
         }
     }
+    
+    @FXML
+    private void aksiMultipleLogin(ActionEvent event) {
+		// TODO Auto-generated method stub
+    	try {
+            Connection conn = (Connection) database.getConnection();
+            java.sql.Statement stm = conn.createStatement();
+            java.sql.ResultSet rs = stm.executeQuery("SELECT * FROM user WHERE username='"+ txtUsername.getText() +"' AND password=MD5('" + txtPassword.getText() + "')");
+            
+            if (rs.next()) {
+                if ("1".equals(rs.getString("typeuser"))) {
+                    // its for login user type 1 (Administrator)
+                    // Bila Login Sukses Maka Masuk Beranda
+                    config2 c = new config2();
+                    c.newStage(stage, lblClose, "/aplikasi/view/homeAdmin.fxml", "Test App", true, StageStyle.UNDECORATED, false);
+                    // do something else for user 1
+                } else if ("0".equals(rs.getString("typeuser"))) {
+                    // its for user 2 (TU)
+                	config2 c = new config2();
+                    c.newStage(stage, lblClose, "/aplikasi/view/homeCustomer.fxml", "Test App", true, StageStyle.UNDECORATED, false);
+                } else {
+                    //do anything you want !
+                }
+            } else {
+                // jika login gagal / salah username password
+                config2.dialog(Alert.AlertType.ERROR, "Error Login, Please Chek Username And Password");
+            }
+        } catch (SQLException e) {
+        
+        }        
+	}
     
     @FXML
     private void enterLogin(KeyEvent event){
