@@ -15,7 +15,7 @@
    <children>
       <AnchorPane id="AnchorPane" maxHeight="-1.0" maxWidth="-1.0" minHeight="-1.0" minWidth="-1.0" pickOnBounds="false" prefHeight="710.0" prefWidth="1011.0" snapToPixel="true" style="-fx-border-color: #2b579a; -fx-background-color: white;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
         <children>
-          <Label id="TitleLabel" fx:id="title" alignment="CENTER" mouseTransparent="true" prefHeight="30.0" prefWidth="1013.0" text="Car Factory App" textFill="#a1a1a1">
+          <Label id="TitleLabel" fx:id="title" alignment="CENTER" mouseTransparent="true" prefHeight="30.0" prefWidth="1387.0" text="Car Factory Management App" textFill="#a1a1a1">
                <font>
                   <Font name="Segoe UI Semibold" size="14.0" />
                </font>
@@ -181,7 +181,7 @@
                   </Pane>
                </children>
             </AnchorPane>
-            <AnchorPane layoutX="1054.0" layoutY="73.0" prefHeight="81.0" prefWidth="329.0">
+            <AnchorPane fx:id="anchorAdmin" layoutX="1054.0" layoutY="73.0" prefHeight="81.0" prefWidth="329.0">
                <children>
                   <Label layoutX="21.0" layoutY="42.0" text="Administrator">
                      <font>
@@ -209,7 +209,7 @@
                   </Button>
                </children>
             </AnchorPane>
-            <AnchorPane layoutX="52.0" layoutY="48.0" prefHeight="130.0" prefWidth="341.0">
+            <AnchorPane fx:id="anchorLogo" layoutX="52.0" layoutY="48.0" prefHeight="130.0" prefWidth="341.0">
                <children>
                   <ImageView fitHeight="112.0" fitWidth="119.0" layoutY="9.0">
                      <image>
