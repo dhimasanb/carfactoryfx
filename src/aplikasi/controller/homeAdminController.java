@@ -11,6 +11,11 @@ import java.net.URL;
 import java.util.Optional;
 import java.util.ResourceBundle;
 
+import aplikasi.animations.FadeInLeftTransition;
+import aplikasi.animations.FadeInLeftTransition1;
+import aplikasi.animations.FadeInRightTransition;
+import aplikasi.animations.FadeInUpTransition;
+import aplikasi.animations.FadeOutUpTransition;
 import aplikasi.config.config2;
 import javafx.application.Platform;
 import javafx.event.ActionEvent;
@@ -50,13 +55,25 @@ public class homeAdminController implements Initializable {
 	private Pane menuEmployees;
 	
 	@FXML
-	private Pane menuClient;
+	private Pane menuCustomer;
 	
 	@FXML
-	private Pane menuCar;
+	private Pane menuVehicle;
 	
 	@FXML
 	private Pane menuReport;
+	
+	@FXML
+	private Pane menuSpareparts;
+	
+	@FXML
+	private Pane menuAbout;
+	
+	@FXML
+	private AnchorPane anchorLogo;
+	
+	@FXML
+	private AnchorPane anchorAdmin;
 	
 	@FXML
 	private Button btnLogout;
@@ -78,19 +95,27 @@ public class homeAdminController implements Initializable {
      */
     @Override
     public void initialize(URL url, ResourceBundle rb) {
-        rec2 = Screen.getPrimary().getVisualBounds(); 
+    	rec2 = Screen.getPrimary().getVisualBounds(); 
         w = 0.1;
         h = 0.1;
-        listMenu.getItems().addAll("  Customer", "  Product","  Micro Market","  Manufacturer","  Product Code","  Purchase Order");
-        Platform.runLater(() -> {
-            stage = (Stage) maximize.getScene().getWindow();
+    	Platform.runLater(() -> {
+    		stage = (Stage) maximize.getScene().getWindow();
             stage.setMaximized(true);
             stage.setHeight(rec2.getHeight());
             maximize.getStyleClass().add("decoration-button-restore");
             resize.setVisible(false);
-            listMenu.getSelectionModel().select(0);
-            con.loadAnchorPane(paneData, "customer.fxml");
-            listMenu.requestFocus();
+            new FadeInUpTransition(anchorLogo).play();
+            new FadeInUpTransition(anchorAdmin).play();
+            new FadeInRightTransition(menuEmployees).play();
+            new FadeInLeftTransition1(menuCustomer).play();
+            new FadeInLeftTransition1(menuReport).play();
+            new FadeInRightTransition(menuSpareparts).play();
+            new FadeInRightTransition(menuVehicle).play();
+            new FadeInLeftTransition1(menuAbout).play();
+//            lblClose.setOnMouseClicked((MouseEvent event) -> {
+//                Platform.exit();
+//                System.exit(0);
+//            });
         });
     }    
 
@@ -176,7 +201,7 @@ public class homeAdminController implements Initializable {
     @FXML
     private void aksiKlikEmployeesMenu(MouseEvent event) {
         config2 config = new config2();
-        config.newStage2(stage, btnLogout, "/aplikasi/view/employeesRoom.fxml", "Sample Apps", true, StageStyle.UNDECORATED, false);
+        config.newStage2(stage, btnLogout, "/aplikasi/view/formMenu.fxml", "Sample Apps", true, StageStyle.UNDECORATED, false);
     }
     
     @FXML
