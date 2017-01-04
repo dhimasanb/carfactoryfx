@@ -11,11 +11,9 @@ import java.net.URL;
 import java.util.Optional;
 import java.util.ResourceBundle;
 
-import aplikasi.animations.FadeInLeftTransition;
 import aplikasi.animations.FadeInLeftTransition1;
 import aplikasi.animations.FadeInRightTransition;
 import aplikasi.animations.FadeInUpTransition;
-import aplikasi.animations.FadeOutUpTransition;
 import aplikasi.config.config2;
 import javafx.application.Platform;
 import javafx.event.ActionEvent;
@@ -95,11 +93,11 @@ public class homeAdminController implements Initializable {
      */
     @Override
     public void initialize(URL url, ResourceBundle rb) {
-    	rec2 = Screen.getPrimary().getVisualBounds(); 
+        rec2 = Screen.getPrimary().getVisualBounds(); 
         w = 0.1;
         h = 0.1;
-    	Platform.runLater(() -> {
-    		stage = (Stage) maximize.getScene().getWindow();
+        Platform.runLater(() -> {
+            stage = (Stage) maximize.getScene().getWindow();
             stage.setMaximized(true);
             stage.setHeight(rec2.getHeight());
             maximize.getStyleClass().add("decoration-button-restore");
@@ -112,10 +110,10 @@ public class homeAdminController implements Initializable {
             new FadeInRightTransition(menuSpareparts).play();
             new FadeInRightTransition(menuVehicle).play();
             new FadeInLeftTransition1(menuAbout).play();
-//            lblClose.setOnMouseClicked((MouseEvent event) -> {
-//                Platform.exit();
-//                System.exit(0);
-//            });
+//          lblClose.setOnMouseClicked((MouseEvent event) -> {
+//          Platform.exit();
+//          System.exit(0);
+//      });
         });
     }    
 
