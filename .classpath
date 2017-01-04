@@ -5,5 +5,6 @@
 	<classpathentry kind="con" path="org.eclipse.fx.ide.jdt.core.JAVAFX_CONTAINER"/>
 	<classpathentry kind="lib" path="C:/Users/Griya Salbini/workspace/MetroUI/dist/splashScreenHibernate.jar"/>
 	<classpathentry kind="lib" path="C:/Users/Griya Salbini/Downloads/Compressed/controlsfx-8.40.12/controlsfx-8.40.12.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Griya Salbini/Downloads/mysql-connector-java-5.1.40.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
