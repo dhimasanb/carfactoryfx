@@ -8,6 +8,10 @@ import javafx.scene.control.Button;
 import java.net.URL;
 import java.util.ResourceBundle;
 
+import aplikasi.animations.FadeInLeftTransition;
+import aplikasi.animations.FadeInLeftTransition1;
+import aplikasi.animations.FadeInRightTransition;
+import aplikasi.animations.FadeInUpTransition;
 import aplikasi.config.config2;
 import javafx.application.Platform;
 import javafx.event.ActionEvent;
@@ -43,13 +47,25 @@ public class aboutUsController implements Initializable {
 	private Button resize;
 	
 	@FXML
-	private Pane menuEmployees;
+	private Label lbljudul;
 	
 	@FXML
-	private Pane menuClient;
+	private Pane paneDhimas;
 	
 	@FXML
-	private Pane menuCar;
+	private Pane paneSyaiful;
+	
+	@FXML
+	private Pane paneTaufiq;
+	
+	@FXML
+	private Pane paneIka;
+	
+	@FXML
+	private Pane paneIrfan;
+	
+	@FXML
+	private Pane paneMita;
 	
 	@FXML
 	private Pane menuReport;
@@ -74,7 +90,23 @@ public class aboutUsController implements Initializable {
      */
     @Override
     public void initialize(URL url, ResourceBundle rb) {
-        
+    	rec2 = Screen.getPrimary().getVisualBounds(); 
+        w = 0.1;
+        h = 0.1;
+    	Platform.runLater(() -> {
+    		stage = (Stage) maximize.getScene().getWindow();
+            stage.setMaximized(true);
+            stage.setHeight(rec2.getHeight());
+            maximize.getStyleClass().add("decoration-button-restore");
+            resize.setVisible(false);
+            new FadeInUpTransition(lbljudul).play();
+            new FadeInRightTransition(paneDhimas).play();
+            new FadeInRightTransition(paneSyaiful).play();
+            new FadeInRightTransition(paneTaufiq).play();
+            new FadeInLeftTransition(paneIka).play();
+            new FadeInLeftTransition1(paneIrfan).play();
+            new FadeInLeftTransition1(paneMita).play();            
+        });
     }    
 
 	// Event Listener on Button[#aksiMaximized].onAction
