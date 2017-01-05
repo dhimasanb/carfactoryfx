@@ -236,7 +236,7 @@ public class homeAdminController implements Initializable {
     private void aksiLogout(ActionEvent event) {
     	Alert alert = new Alert(AlertType.CONFIRMATION);
 		alert.setTitle("Confirmation Dialog");
-		alert.setHeaderText("Are you sure logout from Admin?");
+		alert.setHeaderText("Are you sure logout from Admin Dashboard?");
 		alert.setContentText("Please choose!");
 		
 		Optional<ButtonType> result = alert.showAndWait();
