@@ -11,7 +11,7 @@ public class database {
     public static Connection getConnection() throws SQLException {
         if(koneksi==null){
             new Driver();
-            koneksi =DriverManager.getConnection("jdbc:mysql://localhost:3306/pabrikmobil","root","root");
+            koneksi =DriverManager.getConnection("jdbc:mysql://localhost:3306/pabrikmobilfx","root","root");
         }
         return koneksi;
     }
@@ -21,7 +21,7 @@ public class database {
             System.out.println("Sukses");
          }
         catch (SQLException ex){
-            System.err.println("Koneksi GAGAL");
+            System.err.println("Koneksi gagal");
 
         }
     }
