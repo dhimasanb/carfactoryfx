@@ -1,0 +1,63 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated Jan 6, 2017 1:53:28 AM by Hibernate Tools 5.2.0.CR1 -->
+<hibernate-mapping>
+    <class name="aplikasi.model.Kendaraan" table="kendaraan" catalog="pabrikmobilfx" optimistic-lock="version">
+        <id name="id" type="java.lang.Integer">
+            <column name="id" />
+            <generator class="identity" />
+        </id>
+        <property name="idMobil" type="java.lang.Integer">
+            <column name="id_mobil" />
+        </property>
+        <property name="merk" type="string">
+            <column name="merk" length="50" />
+        </property>
+        <property name="tipe" type="string">
+            <column name="tipe" length="50" />
+        </property>
+        <property name="jenis" type="string">
+            <column name="jenis" length="50" />
+        </property>
+        <property name="warna" type="string">
+            <column name="warna" length="50" />
+        </property>
+        <property name="tahun" type="string">
+            <column name="tahun" length="50" />
+        </property>
+        <property name="noPolisi" type="string">
+            <column name="no_polisi" length="50" />
+        </property>
+        <property name="harga" type="string">
+            <column name="harga" length="50" />
+        </property>
+        <property name="status" type="string">
+            <column name="status" length="50" />
+        </property>
+        <set name="pelanggansForTahunProduksi" table="pelanggan" inverse="true" lazy="true" fetch="select">
+            <key>
+                <column name="tahun_produksi" length="50" />
+            </key>
+            <one-to-many class="aplikasi.model.Pelanggan" />
+        </set>
+        <set name="pelanggansForMerkMobil" table="pelanggan" inverse="true" lazy="true" fetch="select">
+            <key>
+                <column name="merk_mobil" length="50" />
+            </key>
+            <one-to-many class="aplikasi.model.Pelanggan" />
+        </set>
+        <set name="pelanggansForJenisMobil" table="pelanggan" inverse="true" lazy="true" fetch="select">
+            <key>
+                <column name="jenis_mobil" length="50" />
+            </key>
+            <one-to-many class="aplikasi.model.Pelanggan" />
+        </set>
+        <set name="pelanggansForTipeMobil" table="pelanggan" inverse="true" lazy="true" fetch="select">
+            <key>
+                <column name="tipe_mobil" length="50" />
+            </key>
+            <one-to-many class="aplikasi.model.Pelanggan" />
+        </set>
+    </class>
+</hibernate-mapping>

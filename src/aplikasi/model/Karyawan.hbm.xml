@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated Jan 6, 2017 1:53:28 AM by Hibernate Tools 5.2.0.CR1 -->
+<hibernate-mapping>
+    <class name="aplikasi.model.Karyawan" table="karyawan" catalog="pabrikmobilfx" optimistic-lock="version">
+        <id name="id" type="java.lang.Integer">
+            <column name="id" />
+            <generator class="identity" />
+        </id>
+        <property name="nik" type="int">
+            <column name="nik" not-null="true" />
+        </property>
+        <property name="nama" type="string">
+            <column name="nama" length="50" not-null="true" />
+        </property>
+        <property name="umur" type="string">
+            <column name="umur" length="50" not-null="true" />
+        </property>
+        <property name="alamat" type="string">
+            <column name="alamat" length="50" not-null="true" />
+        </property>
+        <property name="jenisKelamin" type="string">
+            <column name="jenis_kelamin" length="50" not-null="true" />
+        </property>
+        <property name="jabatan" type="string">
+            <column name="jabatan" length="50" not-null="true" />
+        </property>
+        <property name="scopePekerjaan" type="string">
+            <column name="scope_pekerjaan" length="50" not-null="true" />
+        </property>
+        <property name="pendidikan" type="string">
+            <column name="pendidikan" length="50" not-null="true" />
+        </property>
+        <property name="gaji" type="string">
+            <column name="gaji" length="50" not-null="true" />
+        </property>
+        <property name="tglMasuk" type="date">
+            <column name="tgl_masuk" length="10" />
+        </property>
+        <property name="tglKeluar" type="date">
+            <column name="tgl_keluar" length="10" />
+        </property>
+    </class>
+</hibernate-mapping>
