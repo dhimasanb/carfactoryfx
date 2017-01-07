@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
 "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
-<!-- Generated Jan 6, 2017 1:53:28 AM by Hibernate Tools 5.2.0.CR1 -->
+<!-- Generated Jan 7, 2017 1:48:23 AM by Hibernate Tools 5.2.0.CR1 -->
 <hibernate-mapping>
     <class name="aplikasi.model.Kendaraan" table="kendaraan" catalog="pabrikmobilfx" optimistic-lock="version">
         <id name="id" type="java.lang.Integer">

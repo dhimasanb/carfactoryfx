@@ -1,5 +1,5 @@
 package aplikasi.model;
-// Generated Jan 6, 2017 1:53:27 AM by Hibernate Tools 5.2.0.CR1
+// Generated Jan 7, 2017 1:48:23 AM by Hibernate Tools 5.2.0.CR1
 
 import java.util.Date;
 
@@ -9,11 +9,15 @@ import java.util.Date;
 public class Karyawan implements java.io.Serializable {
 
 	private Integer id;
-	private int nik;
+	private Integer nik;
 	private String nama;
 	private String umur;
 	private String alamat;
 	private String jenisKelamin;
+	private String email;
+	private String negara;
+	private String provinsi;
+	private String noTlp;
 	private String jabatan;
 	private String scopePekerjaan;
 	private String pendidikan;
@@ -24,26 +28,18 @@ public class Karyawan implements java.io.Serializable {
 	public Karyawan() {
 	}
 
-	public Karyawan(int nik, String nama, String umur, String alamat, String jenisKelamin, String jabatan,
-			String scopePekerjaan, String pendidikan, String gaji) {
+	public Karyawan(Integer nik, String nama, String umur, String alamat, String jenisKelamin, String email,
+			String negara, String provinsi, String noTlp, String jabatan, String scopePekerjaan, String pendidikan,
+			String gaji, Date tglMasuk, Date tglKeluar) {
 		this.nik = nik;
 		this.nama = nama;
 		this.umur = umur;
 		this.alamat = alamat;
 		this.jenisKelamin = jenisKelamin;
-		this.jabatan = jabatan;
-		this.scopePekerjaan = scopePekerjaan;
-		this.pendidikan = pendidikan;
-		this.gaji = gaji;
-	}
-
-	public Karyawan(int nik, String nama, String umur, String alamat, String jenisKelamin, String jabatan,
-			String scopePekerjaan, String pendidikan, String gaji, Date tglMasuk, Date tglKeluar) {
-		this.nik = nik;
-		this.nama = nama;
-		this.umur = umur;
-		this.alamat = alamat;
-		this.jenisKelamin = jenisKelamin;
+		this.email = email;
+		this.negara = negara;
+		this.provinsi = provinsi;
+		this.noTlp = noTlp;
 		this.jabatan = jabatan;
 		this.scopePekerjaan = scopePekerjaan;
 		this.pendidikan = pendidikan;
@@ -60,11 +56,11 @@ public class Karyawan implements java.io.Serializable {
 		this.id = id;
 	}
 
-	public int getNik() {
+	public Integer getNik() {
 		return this.nik;
 	}
 
-	public void setNik(int nik) {
+	public void setNik(Integer nik) {
 		this.nik = nik;
 	}
 
@@ -98,6 +94,38 @@ public class Karyawan implements java.io.Serializable {
 
 	public void setJenisKelamin(String jenisKelamin) {
 		this.jenisKelamin = jenisKelamin;
+	}
+
+	public String getEmail() {
+		return this.email;
+	}
+
+	public void setEmail(String email) {
+		this.email = email;
+	}
+
+	public String getNegara() {
+		return this.negara;
+	}
+
+	public void setNegara(String negara) {
+		this.negara = negara;
+	}
+
+	public String getProvinsi() {
+		return this.provinsi;
+	}
+
+	public void setProvinsi(String provinsi) {
+		this.provinsi = provinsi;
+	}
+
+	public String getNoTlp() {
+		return this.noTlp;
+	}
+
+	public void setNoTlp(String noTlp) {
+		this.noTlp = noTlp;
 	}
 
 	public String getJabatan() {

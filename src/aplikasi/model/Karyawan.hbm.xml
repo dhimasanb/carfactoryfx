@@ -1,39 +1,51 @@
 <?xml version="1.0"?>
 <!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
 "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
-<!-- Generated Jan 6, 2017 1:53:28 AM by Hibernate Tools 5.2.0.CR1 -->
+<!-- Generated Jan 7, 2017 1:48:23 AM by Hibernate Tools 5.2.0.CR1 -->
 <hibernate-mapping>
     <class name="aplikasi.model.Karyawan" table="karyawan" catalog="pabrikmobilfx" optimistic-lock="version">
         <id name="id" type="java.lang.Integer">
             <column name="id" />
             <generator class="identity" />
         </id>
-        <property name="nik" type="int">
-            <column name="nik" not-null="true" />
+        <property name="nik" type="java.lang.Integer">
+            <column name="nik" />
         </property>
         <property name="nama" type="string">
-            <column name="nama" length="50" not-null="true" />
+            <column name="nama" length="50" />
         </property>
         <property name="umur" type="string">
-            <column name="umur" length="50" not-null="true" />
+            <column name="umur" length="50" />
         </property>
         <property name="alamat" type="string">
-            <column name="alamat" length="50" not-null="true" />
+            <column name="alamat" length="50" />
         </property>
         <property name="jenisKelamin" type="string">
-            <column name="jenis_kelamin" length="50" not-null="true" />
+            <column name="jenis_kelamin" length="50" />
+        </property>
+        <property name="email" type="string">
+            <column name="email" length="50" />
+        </property>
+        <property name="negara" type="string">
+            <column name="negara" length="50" />
+        </property>
+        <property name="provinsi" type="string">
+            <column name="provinsi" length="50" />
+        </property>
+        <property name="noTlp" type="string">
+            <column name="no_tlp" length="50" />
         </property>
         <property name="jabatan" type="string">
-            <column name="jabatan" length="50" not-null="true" />
+            <column name="jabatan" length="50" />
         </property>
         <property name="scopePekerjaan" type="string">
-            <column name="scope_pekerjaan" length="50" not-null="true" />
+            <column name="scope_pekerjaan" length="50" />
         </property>
         <property name="pendidikan" type="string">
-            <column name="pendidikan" length="50" not-null="true" />
+            <column name="pendidikan" length="50" />
         </property>
         <property name="gaji" type="string">
-            <column name="gaji" length="50" not-null="true" />
+            <column name="gaji" length="50" />
         </property>
         <property name="tglMasuk" type="date">
             <column name="tgl_masuk" length="10" />
