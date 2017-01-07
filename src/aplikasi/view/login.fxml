@@ -34,7 +34,7 @@
                   <Font name="Segoe UI" size="16.0" />
                </font>
             </Text>
-            <Button fx:id="btnLogin" layoutX="314.0" layoutY="215.0" mnemonicParsing="false" onAction="#aksiLogin" onKeyPressed="#enterLogin" opacity="0.0" prefHeight="33.0" prefWidth="123.0" text="Login" />
+            <Button fx:id="btnLogin" layoutX="314.0" layoutY="215.0" mnemonicParsing="false" onAction="#aksiMultipleLogin" onKeyPressed="#enterLogin" opacity="0.0" prefHeight="33.0" prefWidth="123.0" text="Login" />
             <Text fx:id="lblRudyCom" fill="WHITE" layoutX="9.0" layoutY="314.0" strokeType="OUTSIDE" strokeWidth="0.0" text="&quot;Setiap akhir sebuah cerita akan selalu menciptakan awal cerita baru, begitu juga dengan perpisahan.&quot;">
                <font>
                   <Font name="Segoe UI" size="11.0" />
@@ -45,7 +45,6 @@
                   <Font name="Arial Black" size="15.0" />
                </font>
             </Label>
-            <Button fx:id="btnLogin1" layoutX="162.0" layoutY="215.0" mnemonicParsing="false" onAction="#aksiMultipleLogin" onKeyPressed="#enterLogin" opacity="0.0" prefHeight="33.0" prefWidth="123.0" text="Multi Login" />
          </children>
       </AnchorPane>
    </children>
